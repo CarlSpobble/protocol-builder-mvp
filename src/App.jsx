@@ -13,7 +13,8 @@ function App() {
   const [patientParams, setPatientParams] = useState({
     activity: null,
     cv: null,
-    age: 58
+    age: 58,
+    sessionsPerWeek: null,
   })
 
   const condition = conditionId ? getCondition(conditionId) : null
@@ -31,14 +32,14 @@ function App() {
   function reset() {
     setStep(0)
     setConditionId(null)
-    setPatientParams({ activity: null, cv: null, age: 58 })
+    setPatientParams({ activity: null, cv: null, age: 58, sessionsPerWeek: null })
   }
 
   return (
     <div className="app-shell">
       <header className="app-header">
         <h1>Protocol builder</h1>
-        <p className="subtitle">Protocolli di esercizio basati su evidenza, per kinesiologi</p>
+        <p className="subtitle">Protocolli di esercizio basati su evidenza, per chinesiologi</p>
       </header>
 
       <StepIndicator step={step} total={4} />

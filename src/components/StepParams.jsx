@@ -4,12 +4,13 @@ function StepParams({ initial, onBack, onNext }) {
   const [activity, setActivity] = useState(initial.activity)
   const [cv, setCv] = useState(initial.cv)
   const [age, setAge] = useState(initial.age)
+  const [sessionsPerWeek, setSessionsPerWeek] = useState(initial.sessionsPerWeek)
 
   function handleNext() {
-    onNext({ activity, cv, age })
+    onNext({ activity, cv, age, sessionsPerWeek })
   }
 
-  const canProceed = activity && cv
+  const canProceed = activity && cv && sessionsPerWeek
 
   return (
     <div className="screen">
@@ -38,6 +39,23 @@ function StepParams({ initial, onBack, onNext }) {
             onClick={() => setCv(opt)}
           >
             {opt}
+          </button>
+        ))}
+      </div>
+
+      <label className="field-label">Quante volte a settimana il paziente può venire in studio?</label>
+      <div className="opt-row">
+        {[
+          { value: '1', label: '1 volta / sett.' },
+          { value: '2', label: '2 volte / sett.' },
+          { value: '3+', label: '3+ volte / sett.' },
+        ].map(({ value, label }) => (
+          <button
+            key={value}
+            className={`opt-btn ${sessionsPerWeek === value ? 'selected' : ''}`}
+            onClick={() => setSessionsPerWeek(value)}
+          >
+            {label}
           </button>
         ))}
       </div>

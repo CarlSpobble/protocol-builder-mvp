@@ -1,6 +1,69 @@
 import { useState } from 'react'
 import { getSourceById } from '../data/knowledgeBase'
 
+const SESSION_PLANS = {
+  '1': {
+    studio: [
+      '1 seduta/sett. — forza (8–10 esercizi, 2–3 serie × 10–15 rip.)',
+      'Eventuale aerobico breve a fine seduta (10–15 min)',
+    ],
+    home: [
+      '4 sessioni aerobiche autonome da ~30–35 min',
+      '(cammino veloce, cyclette, nuoto — a scelta del paziente)',
+      'Obiettivo: ~130–140 min aerobici domiciliari / sett.',
+    ],
+    note: 'Con 1 seduta/sett. la quasi totalità del volume aerobico raccomandato (150 min) ricade sul lavoro domiciliare. Verificare che il paziente abbia le competenze, l\'attrezzatura e la motivazione per svolgerlo in autonomia.',
+  },
+  '2': {
+    studio: [
+      'Seduta A — forza (8–10 esercizi, 2–3 serie × 10–15 rip.)',
+      'Seduta B — aerobico supervisionato (30–40 min) + forza breve',
+    ],
+    home: [
+      '2 sessioni aerobiche autonome da ~30 min',
+      'Obiettivo: ~60 min aerobici domiciliari / sett.',
+    ],
+    note: 'Con 2 sedute/sett. il chinesiologo supervisiona almeno una sessione aerobica, utile per monitorare la risposta glicemica e la percezione dello sforzo. Il restante volume aerobico è domiciliare.',
+  },
+  '3+': {
+    studio: [
+      '2 sedute forza (giorni non consecutivi)',
+      '1–2 sedute aerobico supervisionato (30–40 min ciascuna)',
+    ],
+    home: [
+      '0–1 sessioni aerobiche autonome da ~30 min (facoltative)',
+      'Il volume aerobico settimanale di 150 min è raggiunto principalmente in studio',
+    ],
+    note: 'Con 3+ sedute/sett. il chinesiologo ha piena visibilità sul volume di carico totale. La camminata quotidiana leggera rimane comunque raccomandata come attività di movimento generale.',
+  },
+}
+
+function SessionDistribution({ sessionsPerWeek }) {
+  const plan = SESSION_PLANS[sessionsPerWeek]
+  if (!plan) return null
+
+  return (
+    <div className="distribution-box">
+      <p className="distribution-title">Distribuzione settimanale del carico</p>
+      <div className="distribution-cols">
+        <div className="distribution-col dist-studio">
+          <p className="dist-col-label">In studio</p>
+          <ul className="dist-list">
+            {plan.studio.map((item, i) => <li key={i}>{item}</li>)}
+          </ul>
+        </div>
+        <div className="distribution-col dist-home">
+          <p className="dist-col-label">A casa</p>
+          <ul className="dist-list">
+            {plan.home.map((item, i) => <li key={i}>{item}</li>)}
+          </ul>
+        </div>
+      </div>
+      <p className="dist-note">{plan.note}</p>
+    </div>
+  )
+}
+
 function RecommendationCard({ rec, condition }) {
   const [showSource, setShowSource] = useState(false)
   const badgeClass =
@@ -38,8 +101,11 @@ function RecommendationCard({ rec, condition }) {
   )
 }
 
+const SESSIONS_LABEL = { '1': '1 / sett.', '2': '2 / sett.', '3+': '3+ / sett.' }
+
 function StepProtocol({ condition, patientParams, onBack, onConfirm }) {
   const showCvAlert = patientParams.cv === 'Sì, in trattamento'
+  const { sessionsPerWeek } = patientParams
 
   return (
     <div className="screen">
@@ -52,14 +118,16 @@ function StepProtocol({ condition, patientParams, onBack, onConfirm }) {
           <p className="summary-value">8 settimane</p>
         </div>
         <div>
-          <p className="summary-label">Frequenza</p>
-          <p className="summary-value">5 gg / sett.</p>
+          <p className="summary-label">Sedute studio</p>
+          <p className="summary-value">{SESSIONS_LABEL[sessionsPerWeek] ?? '—'}</p>
         </div>
         <div>
-          <p className="summary-label">Sedute / sett.</p>
-          <p className="summary-value">aerobico + 2 forza</p>
+          <p className="summary-label">Obiettivo aerobico</p>
+          <p className="summary-value">150 min / sett.</p>
         </div>
       </div>
+
+      <SessionDistribution sessionsPerWeek={sessionsPerWeek} />
 
       {condition.recommendations.map((rec) => (
         <RecommendationCard key={rec.id} rec={rec} condition={condition} />
