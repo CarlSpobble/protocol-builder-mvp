@@ -1,6 +1,6 @@
 # Protocol Builder — MVP
 
-App per kinesiologi: genera protocolli di esercizio fisico basati su evidenza scientifica, con fonti tracciabili per ogni raccomandazione.
+App per chinesiologi: genera protocolli di esercizio fisico basati su evidenza scientifica, con fonti tracciabili per ogni raccomandazione.
 
 Livello 0 della roadmap: knowledge base statica (diabete tipo 2), nessun backend, nessuna AI. Gratuita, pronta da usare oggi.
 

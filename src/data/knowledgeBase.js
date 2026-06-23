@@ -39,7 +39,7 @@ export const conditions = [
         text: '2-3 sedute/settimana a intensità moderata-vigorosa, non in giorni consecutivi, su grandi gruppi muscolari.',
         evidenceLevel: 'forte',
         sourceIds: ['ada-easd-2022'],
-        sourceDetail: 'ADA e SIGN raccomandano resistance training a intensità moderata-vigorosa 2-3 volte/settimana. La revisione sistematica 2025 segnala che la forza riceve complessivamente meno enfasi dell\'aerobico nelle linee guida disponibili — un gap che il kinesiologo deve compensare attivamente nella prescrizione.'
+        sourceDetail: 'ADA e SIGN raccomandano resistance training a intensità moderata-vigorosa 2-3 volte/settimana. La revisione sistematica 2025 segnala che la forza riceve complessivamente meno enfasi dell\'aerobico nelle linee guida disponibili — un gap che il chinesiologo deve compensare attivamente nella prescrizione.'
       },
       {
         id: 'preassessment',
