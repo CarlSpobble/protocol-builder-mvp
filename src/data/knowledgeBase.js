@@ -2,6 +2,8 @@
 // Ogni voce è tracciabile a una fonte scientifica specifica.
 // Per aggiungere una nuova patologia: duplica un blocco e aggiorna fonti, raccomandazioni, alert.
 
+import { fyssConditions } from './fyss/fyssConditions.js'
+
 export const conditions = [
   {
     id: 't2d',
@@ -69,7 +71,8 @@ export const conditions = [
     id: 'hip-knee-protesi',
     label: 'Post-protesi anca/ginocchio',
     available: false
-  }
+  },
+  ...fyssConditions,
 ];
 
 export function getCondition(id) {
