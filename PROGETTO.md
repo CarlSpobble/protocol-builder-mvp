@@ -4,7 +4,7 @@ Questo file riassume cosa è stato deciso e costruito finora. Caricalo (insieme 
 resto del progetto, o anche da solo) a inizio di ogni nuova sessione di lavoro con
 Claude, così non serve rispiegare il contesto da zero.
 
-Ultimo aggiornamento: 23 giugno 2026.
+Ultimo aggiornamento: 23 giugno 2026 (aggiunto Livello 4 roadmap: ponte MMG ↔ chinesiologo).
 
 ---
 
@@ -81,6 +81,21 @@ Health Club):
   semi-automazione della curation scientifica con le API di PubMed/Europe PMC
   (sempre con revisione umana prima che una fonte nuova entri in produzione),
   eventuale apertura ad altri professionisti.
+- **Livello 4 — visione a lungo termine: ponte MMG ↔ chinesiologo clinico**:
+  il medico di medicina generale (MMG) inquadra il paziente con il supporto
+  dell'AI (anamnesi motoria, controindicazioni, obiettivi clinici) e genera
+  una prescrizione di esercizio strutturata. Questa prescrizione arriva
+  direttamente al chinesiologo clinico dentro l'app, che la usa come punto
+  di partenza per costruire il protocollo personalizzato. L'AI lavora dietro
+  le quinte per entrambi: al MMG suggerisce i parametri chiave da trasmettere
+  (patologia, farmaci rilevanti, soglie di intensità consentite); al
+  chinesiologo traduce quei parametri in raccomandazioni operative con fonte.
+  Nessuno dei due professionisti riceve suggerimenti non tracciabili: tutto
+  è RAG su knowledge base curata. L'app fa da canale sicuro tra i due,
+  eliminando il passaggio informale via email/telefono che oggi è la norma.
+
+  *Nota*: questo livello richiede una riflessione approfondita su permessi,
+  responsabilità e privacy — vedi sezione "Domande aperte" più avanti.
 
 ## Fonti scientifiche già verificate e in uso (diabete tipo 2)
 
@@ -130,3 +145,36 @@ caricare/scaricare manualmente.
 - Se e quando introdurre un backend persistente (Supabase è l'opzione più
   probabile, vista la familiarità già esplorata con strumenti simili come
   Airtable/Glide per Genesi)
+
+### Domande aperte specifiche per il Livello 4 (ponte MMG ↔ chinesiologo)
+
+**Permessi e quadro normativo**
+- In Italia, la prescrizione di esercizio fisico terapeutico è atto medico o
+  può essere delegata? Il chinesiologo LM-67 può ricevere una "prescrizione"
+  dal MMG o si tratta tecnicamente di un "consiglio clinico" senza valore
+  prescrittivo formale? Il quadro normativo è ancora poco definito.
+- L'app può facilitare questo passaggio senza essere considerata un dispositivo
+  medico (MD) ai sensi del Regolamento EU 2017/745 (MDR)? Se i suggerimenti
+  dell'AI contribuiscono a decisioni diagnostiche o terapeutiche, il rischio di
+  classificazione come software medico aumenta.
+
+**Responsabilità clinica condivisa**
+- Chi risponde se un protocollo generato sull'app causa un evento avverso?
+  Oggi la responsabilità è solo del chinesiologo (strumento di supporto
+  decisionale, non prescrittivo). Con il MMG nel loop, la catena di
+  responsabilità si allunga e si complica.
+- Serve definire contrattualmente i confini: l'MMG certifica la diagnosi e
+  le controindicazioni, il chinesiologo certifica il protocollo di esercizio.
+  L'app deve rendere esplicita questa separazione nell'interfaccia e nei log.
+
+**Privacy e condivisione dati tra due professionisti**
+- MMG e chinesiologo sono titolari autonomi del trattamento dati (GDPR art. 4).
+  Condividere dati clinici del paziente tra i due richiede una base giuridica
+  esplicita (consenso del paziente o legittimo interesse clinico) e un accordo
+  formale tra i titolari.
+- I dati inviati all'AI vanno anonimizzati (già previsto dall'architettura
+  attuale), ma i dati scambiati tra MMG e chinesiologo sull'app — anche senza
+  AI — richiedono cifratura end-to-end, log di accesso e una politica di
+  retention chiara.
+- Il paziente deve poter vedere cosa è stato condiviso tra i due professionisti
+  sul suo conto (diritto di accesso GDPR art. 15).
