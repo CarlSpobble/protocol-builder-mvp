@@ -1,76 +1,39 @@
 import { useState } from 'react'
+// Wizard components — kept per poter essere reintrodotti come "modalità protocollo paziente"
+// eslint-disable-next-line no-unused-vars
 import { conditions, getCondition } from './data/knowledgeBase'
+// eslint-disable-next-line no-unused-vars
 import StepCondition from './components/StepCondition'
+// eslint-disable-next-line no-unused-vars
 import StepParams from './components/StepParams'
+// eslint-disable-next-line no-unused-vars
 import StepProtocol from './components/StepProtocol'
+// eslint-disable-next-line no-unused-vars
 import StepDone from './components/StepDone'
+// eslint-disable-next-line no-unused-vars
 import StepIndicator from './components/StepIndicator'
+
+import GuidelineSelector from './components/GuidelineSelector'
+import GuidelineView from './components/GuidelineView'
 import './App.css'
 
 function App() {
-  const [step, setStep] = useState(0)
-  const [conditionId, setConditionId] = useState(null)
-  const [patientParams, setPatientParams] = useState({
-    activity: null,
-    cv: null,
-    age: 58,
-    sessionsPerWeek: null,
-  })
-
-  const condition = conditionId ? getCondition(conditionId) : null
-
-  function handleSelectCondition(id) {
-    setConditionId(id)
-    setStep(1)
-  }
-
-  function handleParamsNext(params) {
-    setPatientParams(params)
-    setStep(2)
-  }
-
-  function reset() {
-    setStep(0)
-    setConditionId(null)
-    setPatientParams({ activity: null, cv: null, age: 58, sessionsPerWeek: null })
-  }
+  const [selectedGuideline, setSelectedGuideline] = useState(null)
 
   return (
     <div className="app-shell">
       <header className="app-header">
-        <h1>Protocol builder</h1>
-        <p className="subtitle">Protocolli di esercizio basati su evidenza, per chinesiologi</p>
+        <h1>Linee guida FYSS</h1>
+        <p className="subtitle">Attività fisica nella prevenzione e cura delle malattie</p>
       </header>
 
-      <StepIndicator step={step} total={4} />
-
       <main className="app-main">
-        {step === 0 && (
-          <StepCondition
-            conditions={conditions}
-            onSelect={handleSelectCondition}
-          />
-        )}
-        {step === 1 && condition && (
-          <StepParams
-            initial={patientParams}
-            onBack={() => setStep(0)}
-            onNext={handleParamsNext}
-          />
-        )}
-        {step === 2 && condition && (
-          <StepProtocol
-            condition={condition}
-            patientParams={patientParams}
-            onBack={() => setStep(1)}
-            onConfirm={() => setStep(3)}
-          />
-        )}
-        {step === 3 && condition && (
-          <StepDone
-            condition={condition}
-            patientParams={patientParams}
-            onRestart={reset}
+        {selectedGuideline === null ? (
+          <GuidelineSelector onSelect={setSelectedGuideline} />
+        ) : (
+          <GuidelineView
+            guideline={selectedGuideline}
+            onBack={() => setSelectedGuideline(null)}
           />
         )}
       </main>

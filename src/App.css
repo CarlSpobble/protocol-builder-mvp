@@ -435,6 +435,194 @@ h2 {
   font-style: italic;
 }
 
+/* ── GuidelineSelector ── */
+
+.search-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  font-size: 0.92rem;
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.search-input:focus {
+  border-color: var(--border-strong);
+}
+
+/* ── GuidelineView ── */
+
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  color: var(--teal-deep);
+  font-size: 0.88rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1.25rem;
+}
+
+.btn-back:hover {
+  text-decoration: underline;
+}
+
+.gl-section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.gl-section:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.gl-section-title {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 0.75rem;
+}
+
+.gl-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  opacity: 0.6;
+  margin: 0 0 0.35rem;
+}
+
+.gl-text {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.gl-table-wrap {
+  overflow-x: auto;
+}
+
+.gl-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.gl-table th {
+  text-align: left;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  opacity: 0.6;
+  padding: 0 10px 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.gl-table td {
+  vertical-align: top;
+  padding: 8px 10px 8px 0;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.gl-table tr:last-child td {
+  border-bottom: none;
+}
+
+.aerobic-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.aerobic-option-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.aerobic-option-row:first-child {
+  padding-top: 2px;
+}
+
+.aerobic-option-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.aerobic-intensity {
+  font-size: 0.88rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.aerobic-detail {
+  font-size: 0.83rem;
+  color: var(--ink-soft);
+  opacity: 0.72;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.gl-note {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  opacity: 0.82;
+  margin: 0.75rem 0 0;
+  padding: 10px 14px;
+  background: var(--paper);
+  border-radius: 8px;
+  line-height: 1.55;
+}
+
+.gl-advice-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+
+.gl-advice-list li {
+  margin-bottom: 0.5rem;
+}
+
+.gl-advice-list li:last-child {
+  margin-bottom: 0;
+}
+
+.gl-footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  opacity: 0.55;
+  line-height: 1.5;
+}
+
+.gl-footer p {
+  margin: 0;
+}
+
 @media (max-width: 480px) {
   .summary-grid {
     grid-template-columns: 1fr;
