@@ -1,5 +1,5 @@
 import { useState } from 'react'
-// Wizard components — kept per poter essere reintrodotti come "modalità protocollo paziente"
+// Wizard components — kept per reintroduzione futura
 // eslint-disable-next-line no-unused-vars
 import { conditions, getCondition } from './data/knowledgeBase'
 // eslint-disable-next-line no-unused-vars
@@ -12,28 +12,33 @@ import StepProtocol from './components/StepProtocol'
 import StepDone from './components/StepDone'
 // eslint-disable-next-line no-unused-vars
 import StepIndicator from './components/StepIndicator'
-
+// FYSS components — kept per reintroduzione futura
+// eslint-disable-next-line no-unused-vars
 import GuidelineSelector from './components/GuidelineSelector'
+// eslint-disable-next-line no-unused-vars
 import GuidelineView from './components/GuidelineView'
+
+import EimSelector from './components/EimSelector'
+import EimProtocol from './components/EimProtocol'
 import './App.css'
 
 function App() {
-  const [selectedGuideline, setSelectedGuideline] = useState(null)
+  const [selectedCondition, setSelectedCondition] = useState(null)
 
   return (
     <div className="app-shell">
       <header className="app-header">
-        <h1>Linee guida FYSS</h1>
-        <p className="subtitle">Attività fisica nella prevenzione e cura delle malattie</p>
+        <h1>Exercise is Medicine</h1>
+        <p className="subtitle">Wellness Foundation · ACSM 2024</p>
       </header>
 
       <main className="app-main">
-        {selectedGuideline === null ? (
-          <GuidelineSelector onSelect={setSelectedGuideline} />
+        {selectedCondition === null ? (
+          <EimSelector onSelect={setSelectedCondition} />
         ) : (
-          <GuidelineView
-            guideline={selectedGuideline}
-            onBack={() => setSelectedGuideline(null)}
+          <EimProtocol
+            condition={selectedCondition}
+            onBack={() => setSelectedCondition(null)}
           />
         )}
       </main>

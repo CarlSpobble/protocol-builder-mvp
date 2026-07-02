@@ -1,0 +1,769 @@
+{
+  "_source": "Exercise is Medicine — Wellness Foundation, in collaborazione con ACSM e Technogym (2024), versione inglese",
+  "_note": "Testo clinico copiato testualmente dal documento. Nessuna riformulazione.",
+  "conditions": [
+    {
+      "id": "healthy-adult-population",
+      "label": "Adulti sani",
+      "epidemiology": "This section summarizes global recommendations for physical activity in individuals without contraindications. Adherence to the recommendations confers benefits for numerous health outcomes, including better quality of life, improved all-cause mortality, cardiovascular disease mortality, incident hypertension, incident site-specific cancers, incident type-2 diabetes, mental health (reduced symptoms of anxiety and depression), cognitive function, sleep, and measures of adiposity (1). According to the latest 2020 WHO guidelines on physical activity: for all populations, some physical activity is better than none. Even when an individual does not meet the recommendations, some physical activity will provide health benefits. When an individual does not meet the recommendations, starting with small amounts of physical activity is recommended, followed by gradual increases in frequency, intensity, and/or duration over time.",
+      "fitt": {
+        "aerobic": {
+          "frequency": "At least 3 sessions per week.",
+          "intensity": "Moderate (40%-59% HRR) and/or vigorous (60%-89% HRR) intensity.",
+          "duration": "30-60 minutes per day of moderate intensity, 20-60 minutes of vigorous intensity, or a combination of both.",
+          "type": "Continuous or intermittent training involving major muscle groups."
+        },
+        "resistance": {
+          "frequency": "At least 2 sessions per week for each major muscle group.",
+          "intensity": "60-70% of 1RM.",
+          "duration": "Performed for 8-12 repetitions (1-3 sets).",
+          "type": "Multi-joint exercises affecting more than one muscle group, targeting agonist and antagonist, using a variety of exercise equipment and/or body weight."
+        },
+        "flexibility": {
+          "frequency": "≥2-3 sessions per week, most effective every day.",
+          "intensity": "Stretching to the point of tightness or slight discomfort.",
+          "duration": "Holding a static stretch for 10-30 seconds. A total of 90 seconds is recommended. For older adults, up to 30-60 seconds may confer greater benefit.",
+          "type": "Static (active or inactive), dynamic, ballistic, etc."
+        }
+      },
+      "clinical_notes": [
+        "For the general population, pre-exercise medical clearance is generally unnecessary. For inactive individuals without contraindications, physical activity can be started and progressively increased without medical clearance.",
+        "Adults are recommended to engage in an average weekly volume of 150-300 minutes of moderate intensity physical activity or 75-150 minutes of vigorous intensity, or an equivalent combination of both (1 minute vigorous = 2 minutes moderate).",
+        "Additional health benefits also occur with muscle-strengthening activities at moderate to vigorous intensity on two or more days a week.",
+        "All adults should limit the amount of time spent sedentary and replace it with physical activity of any intensity, particularly individuals with high levels of sedentary time.",
+        "All older adults should carry out varied multicomponent physical activity on three or more days a week in order to enhance functional capacity and prevent falls.",
+        "Regular bouts of moderate physical activity (<60% of VO₂max and heart rate reserve, and a duration threshold of 60 minutes) are immuno-enhancing. Long-lasting bouts of physical activity and those of high-intensity (>60% of VO₂max and heart rate reserve, and more than 60 minutes) can be immunosuppressive, transiently increasing the risk of infection or illness."
+      ],
+      "references": [
+        {
+          "id": "ref-1",
+          "citation": "World Health Organization. WHO guidelines on physical activity and sedentary behavior. Vol. 3, World Health Organization. Geneva: World Health Organization; 2020.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-2",
+          "citation": "American College of Sports Medicine. ACSM's Guidelines for Exercise Testing and Prescription. 8 ed. Baltimore: Williams & Wilkins.; 2022.",
+          "is_fitt_source": true
+        },
+        {
+          "id": "ref-3",
+          "citation": "Simpson RJ, Campbell JP, Gleeson M, Krüger K, Nieman DC, Pyne DB, et al. Can exercise affect immune function to increase susceptibility to infection? Exerc Immunol Rev. 2020;26:8-22.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-4",
+          "citation": "Gleeson, M, Bishop, NC, Stensel, DJ, Lindley, MR, Mastana, SS, & Nimmo, MA. The anti-inflammatory effects of exercise: mechanisms and implications for the prevention and treatment of disease. Nat Rev Immunol 2011; 11(9), 607-615.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-5",
+          "citation": "Mantovani, A, Garlanda C. Humoral innate immunity and acute-phase proteins. N Eng J Med 2023; 388: 439-452.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-6",
+          "citation": "Fiuza-Luces, C, Valenzuela, PL, Gálvez, BG, Ramírez, M, López-Soto, A, Simpson, RJ, & Lucia, A. The effect of physical exercise on anticancer immunity. Nat Rev Immunol 2023; 1-12.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-7",
+          "citation": "Pedersen BK, Bruunsgaard H. How physical exercise influences the establishment of infections. Sports Med. 1995 Jun;19(6):393-400.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-8",
+          "citation": "Nieman DC, Wentz LM. The compelling link between physical activity and the body's defense system. J Sport Heal Sci. 2019;8(3):201-17.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-9",
+          "citation": "Denay KL, Breslow RG, Turner MN, Nieman DC, Roberts WO, Best TM. ACSM Call to Action Statement: COVID-19 Considerations for Sports and Physical Activity. Curr Sports Med Rep. 2020 Aug 9;19(8):326-8.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-10",
+          "citation": "Walsh NP. Recommendations to maintain immune health in athletes. Eur J Sport Sci. 2018;18(6):820-831.",
+          "is_fitt_source": false
+        }
+      ]
+    },
+    {
+      "id": "hypertension",
+      "label": "Ipertensione",
+      "epidemiology": "The number of people aged 30-79 years with hypertension worldwide in 2019 was 626 million women and 652 million men, with a global age-standardized prevalence of 32% in women and 34% in men (1). Guidelines for the prevention, attenuation, and management of hypertension recommend lifestyle interventions for individuals with high-normal blood pressure (SBP: 130-139 mmHg and/or DBP: 85-89 mmHg), Grade 1 hypertension (SBP: 140-159 mmHg and/or DBP: 90-99 mmHg), and for individuals receiving treatment for hypertension. Among these lifestyle changes, such as smoking cessation, weight management, moderation of alcohol consumption, and healthy dietary patterns, physical activity is warranted (2). People who meet the physical activity guidelines of at least 150 minutes/week (10 MET hour per week) reduce their risk of developing hypertension by 6% in comparison with inactive individuals (3). This risk is reduced by 12% with twice the amount of physical activity (20 MET hour per week), and by 33% with doses of 60 MET hour per week (3).",
+      "fitt": {
+        "aerobic": {
+          "frequency": "≥5-7 days/week.",
+          "intensity": "Moderate (40-60% of VO₂R or HRR; RPE 12-13 on a 6-20 scale).",
+          "duration": "≥30 minutes/day of continuous or accumulated exercise.",
+          "type": "Prolonged, rhythmic activities using large muscle groups (e.g., walking, cycling, swimming)."
+        },
+        "resistance": {
+          "frequency": "≥2-3 days/week.",
+          "intensity": "Moderate (60-70% 1RM; may progress to 80% 1RM; for older individuals and novice exercisers, begin with 40-50% 1RM).",
+          "duration": "2-4 sets of 8-12 repetitions of each of the major muscle groups per session to total ≥20 min per session with rest days interspersed depending on the muscle groups being exercised.",
+          "type": "Resistance machines, free weights, resistance bands, and/or functional body weight exercise."
+        },
+        "flexibility": {
+          "frequency": "≥2-3 days/week.",
+          "intensity": "Stretch to the point of feeling tightness or slight discomfort.",
+          "duration": "Hold static stretch for 10-30 seconds with 2-4 repetitions of each exercise targeting the major muscle tendon units to total 60 seconds of total stretching time for each exercise; ≤10 minutes per session.",
+          "type": "Static, dynamic, and/or proprioceptive neuromuscular facilitation."
+        }
+      },
+      "clinical_notes": [
+        "For most asymptomatic individuals with hypertension and prehypertension, adequate blood pressure management prior to engaging in light-to-moderate intensity exercise programs such as walking is sufficient with no need for a medical evaluation of exercise.",
+        "For individuals with hypertension whose blood pressure is uncontrolled, consultation with their physician is needed prior to initiating an exercise program to determine if the individual requires an exercise test.",
+        "Individuals with stage 2 hypertension or target organ disease should not engage in any exercise, including exercise testing, prior to a medical evaluation and adequate blood pressure management. A medically supervised symptom-limited exercise test is recommended prior to engaging in any exercise program for these individuals.",
+        "It is preferred that individuals take their usual antihypertensive medications as recommended during exercise testing for prescription purposes.",
+        "As a rule of thumb, it is safe to maintain SBP ≤220 mmHg and DBP ≤105 mmHg when exercising.",
+        "First-choice antihypertensive medication is not, in fact, more effective than exercise intervention at improving the blood pressure of hypertensive patients (5).",
+        "For individuals with hypertension, aerobic training seems to provide greater benefits compared to combined exercise and dynamic resistance training (8).",
+        "Although there is no evidence of an association between the frequency of exercise and blood pressure reductions, there are some indications of an acute reduction in blood pressure over many hours as a consequence of an exercise session. Therefore, consideration should be given to daily or near-daily exercise frequencies."
+      ],
+      "references": [
+        {
+          "id": "ref-1",
+          "citation": "Zhou B, Carrillo-Larco RM, Danaei G, Riley LM, Paciorek CJ, Stevens GA, et al. Worldwide trends in hypertension prevalence and progress in treatment and control from 1990 to 2019: a pooled analysis of 1201 population-representative studies with 104 million participants. Lancet. 2021;398(10304):957-80.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-2",
+          "citation": "Piepoli MF, Hoes AW, Agewall S, Albus C, Brotons C, Catapano AL, et al. 2016 European Guidelines on cardiovascular disease prevention in clinical practice. Eur Heart J. 2016;37(29):2315-81.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-3",
+          "citation": "Liu X, Zhang D, Liu Y, Sun X, Han C, Wang B, et al. Dose-Response Association between Physical Activity and Incident Hypertension: A Systematic Review and Meta-Analysis of Cohort Studies. Hypertension. 2017;69(5):813-20.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-4",
+          "citation": "Fossum E, Gleim GW, Kjeldsen SE, Kizer JR, Julius S, Devereux RB, et al. The effect of baseline physical activity on cardiovascular outcomes and new-onset diabetes in patients treated for hypertension and left ventricular hypertrophy: The LIFE study. J Intern Med. 2007;262(4):439-48.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-5",
+          "citation": "Noone C, Leahy J, Morrissey EC, Newell J, Newell M, Dwyer CP, et al. Comparative efficacy of exercise and antihypertensive pharmacological interventions in reducing blood pressure in people with hypertension: A network meta-analysis. Eur J Prev Cardiol. 2020;27(3):247-55.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-6",
+          "citation": "Fletcher GF, Ades PA, Kligfield P, Arena R, Balady GJ, Bittner VA, et al. Exercise standards for testing and training: A scientific statement from the American heart association. Circulation. 2013;128(8):873-934.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-7",
+          "citation": "Pescatello LS, Franklin BA, Fagard R, Farquhar WB, Kelley GA, Ray CA, et al. American College of Sports Medicine position stand. Exercise and hypertension. Med Sci Sports Exerc. 2004 Mar;36(3):533-53.",
+          "is_fitt_source": true
+        },
+        {
+          "id": "ref-8",
+          "citation": "Hanssen H, Boardman H, Deiseroth A, Moholdt T, Simonenko M, Kränkel N, et al. Personalized exercise prescription in the prevention and treatment of arterial hypertension: A Consensus Document from the European Association of Preventive Cardiology (EAPC) and the ESC Council on Hypertension. Eur J Prev Cardiol. 2022;29(1):205-15.",
+          "is_fitt_source": false
+        }
+      ]
+    },
+    {
+      "id": "cardiovascular-diseases",
+      "label": "Patologie cardiovascolari",
+      "epidemiology": "Cardiovascular diseases (CVDs) are diseases that affect the heart or blood vessels. Examples of these diseases are coronary heart disease, heart failure, coronary vascular diseases, and cerebrovascular diseases. CVDs are a leading cause of death worldwide. In 2021, CVDs were responsible for around 20.5 million deaths globally (1), with more deaths in men than in women. There are around 621 million people living with cardiovascular diseases around the world (1). Improving cardiorespiratory fitness through cardiac rehabilitation is paramount in preventing adverse outcomes associated with CVDs. Previous studies have reported that individuals enrolled in a cardiac rehabilitation program post-myocardial infarction have a lower risk of reinfarction (47%), cardiac mortality (36%), and all-cause mortality (26%) in comparison with a non-exercising control group (4). Previous analyses showed a 17-34% reduction in mortality for each 1-MET improvement in cardiorespiratory fitness (5,6).",
+      "fitt": {
+        "aerobic": {
+          "frequency": "Minimally 3 days/week, preferably up to 5 days/week.",
+          "intensity": "With an exercise test: 40%-80% of exercise capacity using HRR, VO₂R or VO₂peak. Without an exercise test: seated or standing resting heart rate from +20 to +30 beats/minute on a 12-16 RPE.",
+          "duration": "20-60 minutes.",
+          "type": "Aerobic modes such as ergometers (arm, combination of upper and lower), upright and recumbent cycle, treadmill, walking, recumbent stepper, rower, elliptical."
+        },
+        "resistance": {
+          "frequency": "2-3 non-consecutive days/week.",
+          "intensity": "Perform 10-15 repetitions of each exercise without significant fatigue, RPE 11-13 or 40%-60% of 1RM.",
+          "duration": "1-3 sets; 8-10 exercises for the major muscle groups.",
+          "type": "Select equipment that is safe and comfortable for patient use."
+        },
+        "flexibility": {
+          "frequency": "≥2-3 days per week. Daily being most effective.",
+          "intensity": "To the point of feeling tightness or slight discomfort.",
+          "duration": "10-30 seconds hold for static stretching; ≥4 repetitions of each exercise.",
+          "type": "Static and dynamic stretching focused on the major joints of the limbs and the lower back."
+        }
+      },
+      "clinical_notes": [
+        "The FITT table above refers to outpatient cardiac rehabilitation programs. Inpatient programs have different recommendations: aerobic frequency minimally 3 days/week preferably ≥5 days/week; intensity: resting HR +20 bpm (myocardial infarction) or +30 bpm (heart surgery), upper limit ≤120 bpm = RPE ≤13 on 6-20 scale; duration: begin with intermittent 3-5 min bouts, progress to 10-15 min continuous walking; type: walking or treadmill/cycle. Resistance training is NOT recommended in the inpatient setting. Flexibility inpatient: minimally once per day, very mild stretch discomfort, all major joints ≥30 seconds with sternal precautions.",
+        "Virtually all individuals will benefit from some level of inpatient intervention, with rare exceptions being the only exclusions.",
+        "After hospital discharge, the individual should participate in a clinically supervised outpatient cardiac rehabilitation program if eligible.",
+        "Individuals that have undergone recent cardiac surgery should be examined for wound infections and sternal instability that would hamper healing. In those patients, delay in the initiation of upper-extremity resistance training after surgery (4-6 weeks) is broadly accepted.",
+        "Aerobic exercise recommendations for outpatients include increases of 1-5 minutes per session until the goal duration is achieved. Achieving the desired goal in duration followed by an increase in intensity and/or frequency is preferred. Generally, increases of 5%-10% in intensity and duration are well tolerated.",
+        "Contraindications for inpatient exercise include: unstable angina, uncontrolled hypertension (>180 mmHg), orthostatic blood pressure drop of >20 mmHg with symptoms, uncontrolled atrial or ventricular arrhythmias, uncontrolled sinus tachycardia (>120 beats/minute), uncontrolled diabetes mellitus."
+      ],
+      "references": [
+        {
+          "id": "ref-1",
+          "citation": "Lindstrom M, DeCleene N, Dorsey H, Fuster V, Johnson CO, LeGrand KE, et al. Global Burden of Cardiovascular Diseases and Risks Collaboration, 1990-2021. J Am Coll Cardiol. 2022 Dec;80(25):2372-425.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-2",
+          "citation": "Anderson L, Oldridge N, Thompson DR, Zwisler AD, Rees K, Martin N, et al. Exercise-Based Cardiac Rehabilitation for Coronary Heart Disease Cochrane Systematic Review and Meta-Analysis. J Am Coll Cardiol. 2016;67(1):1-12.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-3",
+          "citation": "Taylor C, Tsakirides C, Moxon J, Moxon JW, Dudfield M, Witte K, et al. Exercise dose and all-cause mortality within extended cardiac rehabilitation: a cohort study. Open Hear. 2017 Jul 28;4(2):e000623.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-4",
+          "citation": "Lawler PR, Filion KB, Eisenberg MJ. Efficacy of exercise-based cardiac rehabilitation post-myocardial infarction: A systematic review and meta-analysis of randomized controlled trials. Am Heart J. 2011;162(4):571-584.e2.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-5",
+          "citation": "Feuerstadt, P, Chai, A, Kligfield, P. Submaximal effort tolerance as a predictor of all-cause mortality in patients undergoing cardiac rehabilitation. Clin Cardiol. 2007 May;30(5):234-8.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-6",
+          "citation": "Taylor C, Tsakirides C, Moxon J, Moxon JW, Dudfield M, Witte KK, et al. Submaximal fitness and mortality risk reduction in coronary heart disease: a retrospective cohort study of community-based exercise rehabilitation. BMJ Open. 2016 Jun 30;6(6):e011125.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-7",
+          "citation": "American College of Sports Medicine. ACSM's Guidelines for Exercise Testing and Prescription. 8 ed. Baltimore: Williams & Wilkins.; 2022.",
+          "is_fitt_source": true
+        },
+        {
+          "id": "ref-8",
+          "citation": "American Association of Cardiovascular and Pulmonary Rehabilitation. Guidelines for Cardiac Rehabilitation and Secondary Prevention Programs. Human Kinetics; 2013.",
+          "is_fitt_source": true
+        },
+        {
+          "id": "ref-9",
+          "citation": "Balady GJ, Williams MA, Ades PA, Bittner V, Comoss P, Foody JM, et al. Core Components of Cardiac Rehabilitation/Secondary Prevention Programs: 2007 Update. Circulation. 2007 May 22;115(20):2675-82.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-10",
+          "citation": "Fletcher GF, Ades PA, Kligfield P, Arena R, Balady GJ, Bittner VA, et al. Exercise Standards for Testing and Training. Circulation. 2013 Aug 20;128(8):873-934.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-11",
+          "citation": "Squires RW, Kaminsky LA, Porcari JP, Ruff JE, Savage PD, Williams MA. Progression of Exercise Training in Early Outpatient Cardiac Rehabilitation. J Cardiopulm Rehabil Prev. 2018 May;38(3):139-46.",
+          "is_fitt_source": true
+        }
+      ]
+    },
+    {
+      "id": "overweight-and-obesity",
+      "label": "Sovrappeso e obesità",
+      "epidemiology": "The most recent estimates indicate that the worldwide prevalence of overweight and obesity in 2020 was 24% and 14% respectively (1). The World Health Organization (WHO) defines overweight and obesity as a body mass index (BMI)—the weight (in kilograms) divided by squared height (in meters)—of 25 to 29.9 kg/m² and ≥30 kg/m², respectively, describing these conditions as abnormal or excessive fat accumulation associated with increased health risks such as chronic diseases, especially type 2 diabetes, cardiovascular diseases, musculoskeletal diseases, psychological disorders, and some cancers. Waist circumference is also used as a surrogate of abdominal fat mass (>102 cm in men and >88 cm in women as a proxy of obesity). The amount of physical activity is inversely correlated with the risk of being overweight or obese. In comparison with >15 MET hour per week, performing from 7.5 to 15 MET hour per week, >0 to 7.5 MET hour per week, or not performing any physical activity at all increases the risk of obesity by 1.54, 1.88, and 2.01 for men and by 1.24, 1.63, and 1.69 for women, respectively (2).",
+      "fitt": {
+        "aerobic": {
+          "frequency": "≥5 days per week; up to 7 days per week.",
+          "intensity": "Initial intensity should be moderate (40%-59% VO₂R or HRR); progress to vigorous (>60% VO₂R or HRR) for greater health benefits.",
+          "duration": "More than 150 minutes, and preferably 300 min/week (45-60 minutes on most days of the week) for weight gain prevention. A minimum of 225-420 minutes per week for weight loss. 60 minutes per day on most days of the week for weight regain prevention.",
+          "type": "Prolonged, rhythmic activities using large muscle groups (e.g., walking, cycling, swimming)."
+        },
+        "resistance": {
+          "frequency": "2-3 days per week.",
+          "intensity": "60%-85% of 1RM; gradually increase to enhance strength and muscle mass.",
+          "duration": "High volume load (sets x reps x load x exercises): >60% 1RM; 2-4 sets of 8-12 repetitions for each of the major muscle groups.",
+          "type": "Resistance machines, and/or free weights."
+        },
+        "flexibility": {
+          "frequency": "≥2-3 days per week.",
+          "intensity": "Stretch to the point of feeling tightness or slight discomfort.",
+          "duration": "Hold static stretch for 10-30 seconds with 2-4 repetitions of each exercise.",
+          "type": "Static, dynamic, other stretching."
+        }
+      },
+      "clinical_notes": [
+        "Exercise testing is not necessary for overweight or obese individuals before starting an exercise program of low to moderate intensity, but testing physical activity capacity may be useful for implementing appropriate loading parameters and monitoring improvements.",
+        "Consumption of certain medications should be carefully controlled during exercise prescription. Phentermine is an appetite suppressant that may alter heart rate or blood pressure responses, requiring the exercise prescription to be monitored accordingly. Liraglutide increases insulin release putting the individual at an elevated risk of hypoglycemia during and after exercise, which should be controlled.",
+        "Individuals with overweight or obesity who have musculoskeletal orthopedic conditions may necessitate adaptations such as the use of leg or arm ergometry as an alternative to other methods such as the treadmill.",
+        "Resistance training alone does not induce changes in weight loss or body composition as the primary method of prescription, but concurrent training (combined aerobic and resistance training) would seem better than aerobic training alone.",
+        "To prevent weight gain, total volumes of exercise activities on the upper end of the guidelines represent the recommended target, namely around 300 minutes per week. Intensity should be moderate to vigorous (>3 METs) since light-intensity activities have likely no effect on the prevention of weight gain.",
+        "To observe weight loss, a volume of 225-420 minutes per week is necessary, while lower volumes of physical activity, even at the minimum quantity of physical activity recommendations, provide little or no change.",
+        "Weight loss by any method (dietary restriction, bariatric surgery, appetite suppressant drugs) must be accompanied by a resistance training prescription to prevent the loss of muscle mass that inevitably accompanies reduced energy intake.",
+        "To manage weight after weight loss and prevent weight regain, the recommendation would be for a minimum of 60 minutes/day of moderate-intensity physical activity."
+      ],
+      "references": [
+        {
+          "id": "ref-1",
+          "citation": "World Obesity Federation, World Obesity Atlas 2023.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-2",
+          "citation": "Su C, Jia XF, Wang ZH, Wang HJ, Ouyang YF, Zhang B. Longitudinal association of leisure time physical activity and sedentary behaviors with body weight among Chinese adults from China Health and Nutrition Survey 2004-2011. Vol. 71, European Journal of Clinical Nutrition. Nature Publishing Group; 2017. p. 383-8.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-3",
+          "citation": "Johnson NA, Sultana RN, Brown WJ, Bauman AE, Gill T. Physical activity in the management of obesity in adults: A position statement from Exercise and Sport Science Australia. J Sci Med Sport. 2021;24(12):1245-54.",
+          "is_fitt_source": true
+        },
+        {
+          "id": "ref-4",
+          "citation": "O'Donoghue G, Blake C, Cunningham C, Lennon O, Perrotta C. What exercise prescription is optimal to improve body composition and cardiorespiratory fitness in adults living with obesity? A network meta-analysis. Obes Rev. 2021 Feb 8;22(2).",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-5",
+          "citation": "Dutton GR, Kim Y, Jacobs DR, Li X, Loria CM, Reis JP, et al. 25-year weight gain in a racially balanced sample of U.S. adults: The CARDIA study. Obesity. 2016 Sep 1;24(9):1962-8.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-6",
+          "citation": "Shaw KA, Gennat HC, O'Rourke P, Del Mar C. Exercise for overweight or obesity. Cochrane Database Syst Rev. 2006 Oct 18;2010(1).",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-7",
+          "citation": "Jakicic JM, Powell KE, Campbell WW, Dipietro L, Pate RR, Pescatello LS, et al. Physical Activity and the Prevention of Weight Gain in Adults: A Systematic Review. Med Sci Sports Exerc. 2019;51(6):1262-9.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-8",
+          "citation": "Swift DL, McGee JE, Earnest CP, Carlisle E, Nygard M, Johannsen NM. The Effects of Exercise and Physical Activity on Weight Loss and Maintenance. Vol. 61, Progress in Cardiovascular Diseases. W.B. Saunders; 2018. p. 206-13.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-9",
+          "citation": "American College of Sports Medicine. ACSM's Guidelines for Exercise Testing and Prescription. 8 ed. Baltimore: Williams & Wilkins.; 2022.",
+          "is_fitt_source": true
+        }
+      ]
+    },
+    {
+      "id": "type-2-diabetes",
+      "label": "Diabete tipo 2",
+      "epidemiology": "The number of people around the world with diabetes is over 537 million, which represents 9.3% of the global adult population (20-79 years) (1). In women, the prevalence is slightly higher (9.6%) than in men (9.0%) (1). Type 2 diabetes (T2D) is the most prevalent diabetes condition, accounting for 90-95% of all diabetes (2). T2D is characterized by defects in insulin secretion and/or inability to use insulin. Criteria for the diagnosis of T2D include ≥126 mg/dL (7.0 mmol/L) of fasting plasma glucose, ≥200 mg/dL (11.1 mmol/L) during an oral glucose tolerance test, ≥6.5% (48 mmol/mol) of glycated hemoglobin (HbA1c), or classic symptoms of hypoglycemia or hyperglycemic crisis with random plasma glucose of ≥200 mg/dL (11.1 mmol/L) (3). A weekly dose of 150 to 300 minutes of moderate to vigorous intensity physical activity is estimated to reduce the risk of T2D by 25-35% (4). Structured exercise duration of more than 150 minutes per week is associated with greater reductions in HbA1c (0.89% reduction) compared with structured exercise duration of 150 minutes or less per week (0.36% reduction in HbA1c) (5).",
+      "fitt": {
+        "aerobic": {
+          "frequency": "3-7 days/week; no more than 2 consecutive days without activity.",
+          "intensity": "Moderate to vigorous (based on subjective experience of \"moderate\" or \"very hard\").",
+          "duration": "150 minutes/week at moderate to vigorous intensity.",
+          "type": "Prolonged, rhythmic activities using large muscle groups (e.g., walking, cycling, swimming)."
+        },
+        "resistance": {
+          "frequency": "A minimum of 2 non-consecutive days/week, but preferable 3 days.",
+          "intensity": "Moderate (50-69% 1RM); may progress to vigorous (70%-85% of 1RM) to improve strength.",
+          "duration": "At least 8-10 exercises with 1-3 sets of 10-15 repetitions to near fatigue per set early in training.",
+          "type": "Resistance machines, free weights, resistance bands, and/or body weight."
+        },
+        "flexibility": {
+          "frequency": "≥2-3 days/week.",
+          "intensity": "Stretch to the point of feeling tightness or slight discomfort. Balance exercises: light to moderate intensity.",
+          "duration": "Hold static stretch for 10-30 seconds with 2-4 repetitions of each exercise targeting the major muscle tendon units to total 60 seconds of total stretching time for each exercise; ≤10 minutes per session.",
+          "type": "Static, dynamic, other stretching, yoga."
+        }
+      },
+      "clinical_notes": [
+        "To participate in low- to moderate-intensity physical activity such as brisk walking, no pre-exercise medical evaluation is needed, except when symptoms of cardiovascular disease or microvascular complications are present. To participate in moderate- to vigorous-intensity physical activity, medical clearance is recommended in adults who are physically inactive.",
+        "Individuals with blood glucose >250 mg/dL (13.9 mmol/L) should not begin exercise if moderate or high levels of blood or urinary ketones are present. Use caution during physical activity with a blood glucose >300 mg/dL (16.7 mmol/L) without excessive ketones, stay hydrated, and only begin if feeling well.",
+        "Individuals are advised to hydrate properly by drinking adequate fluids before, during, and after exercise, as well as to avoid exercising during the peak heat of the day or in direct sunlight to prevent overheating.",
+        "Particularly for individuals using insulin or sulfonylureas (and possibly meglitinides within 2-3 hours of physical activity), it is important to carry rapid-acting carbohydrate sources during physical activity to treat hypoglycemia and to have glucagon at hand to treat severe hypoglycemia (if prone to developing it).",
+        "Individuals should avoid more than 2 consecutive days of inactivity due to the transient nature of exercise-induced improvements in insulin action, as inactivity has a negative impact on insulin metabolism.",
+        "Concurrent training (aerobic training + resistance training) has shown slightly superior effects than either type of training alone.",
+        "Any intensity of resistance exercise is recommended, but dynamic high-intensity resistance training seems to result in greater improvements in glycemic control and strength development.",
+        "Flexibility and balance exercises should not substitute aerobic and resistance training, since flexibility training does not affect glucose control or insulin action, or improve body composition.",
+        "Supervised training has been shown to be particularly effective in improving the health of diabetic people as a consequence of providing better information regarding form, intensity, and duration of exercise and motivation in comparison with unsupervised exercise.",
+        "Individuals with T2D have an increased risk of heat stress during physical activity, leading to an impaired ability to thermoregulate due to abnormal cutaneous vasodilation and decreased sweating."
+      ],
+      "references": [
+        {
+          "id": "ref-1",
+          "citation": "Saeedi P, Petersohn I, Salpea P, Malanda B, Karuranga S, Unwin N, et al. Global and regional diabetes prevalence estimates for 2019 and projections for 2030 and 2045: Results from the International Diabetes Federation Diabetes Atlas, 9th edition. Diabetes Res Clin Pract. 2019;157:107843.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-2",
+          "citation": "American Diabetes Association. 2. Classification and diagnosis of diabetes: standards of medical care in diabetes—2021. Diabetes care, 2021; 44: S15-S33.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-3",
+          "citation": "Kanaley JA, Colberg SR, Corcoran MH, Malin SK, Rodriguez NR, Crespo CJ, et al. Exercise/Physical Activity in Individuals with Type 2 Diabetes: A Consensus Statement from the American College of Sports Medicine. Med Sci Sport Exerc. 2022 Feb;54(2):353-68.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-4",
+          "citation": "2018 Physical Activity Guidelines Advisory Committee. 2018 Physical Activity Guidelines Advisory Committee Scientific Report. Washington, DC: U.S. Department of Health and Human Services, 2018.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-5",
+          "citation": "Umpierre D, Ribeiro PAB, Kramer CK, Leitão CB, Zucatti ATN, Azevedo MJ, et al. Physical activity advice only or structured exercise training and association with HbA1c levels in type 2 diabetes: a systematic review and meta-analysis. JAMA. 2011 May 4;305(17):1790-9.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-6",
+          "citation": "Kodama S, Tanaka S, Heianza Y, Fujihara K, Horikawa C, Shimano H, et al. Association between physical activity and risk of all-cause mortality and cardiovascular disease in patients with diabetes: A meta-analysis. Diabetes Care. 2013;36(2):471-9.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-7",
+          "citation": "Geidl W, Schlesinger S, Mino E, Miranda L, Pfeifer K. Dose-response relationship between physical activity and mortality in adults with noncommunicable diseases: A systematic review and meta-analysis of prospective observational studies. Int J Behav Nutr Phys Act. 2020;17(1).",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-8",
+          "citation": "Colberg SR, Sigal RJ, Yardley JE, Riddell MC, Dunstan DW, Dempsey PC, et al. Physical activity/exercise and diabetes: A position statement of the American Diabetes Association. Diabetes Care. 2016;39(11):2065-79.",
+          "is_fitt_source": true
+        },
+        {
+          "id": "ref-9",
+          "citation": "American College of Sports Medicine. ACSM's Guidelines for Exercise Testing and Prescription. 8 ed. Baltimore: Williams & Wilkins.; 2009.",
+          "is_fitt_source": true
+        },
+        {
+          "id": "ref-10",
+          "citation": "Yang Z, Scott CA, Mao C, Tang J, Farmer AJ. Resistance exercise versus aerobic exercise for type 2 diabetes: A systematic review and meta-analysis. Sport Med. 2014;44(4):487-99.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-11",
+          "citation": "Johannsen NM, Swift DL, Lavie CJ, Earnest CP, Blair SN, Church TS. Combined Aerobic and Resistance Training Effects on Glucose Homeostasis, Fitness, and Other Major Health Indices: A Review of Current Guidelines. Sport Med. 2016;46(12):1809-18.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-12",
+          "citation": "Willey KA, Fiatarone Singh MA. Battling insulin resistance in elderly obese people with type 2 diabetes: Bring on the heavy weights. Diabetes Care. 2003;26(5):1580-8.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-13",
+          "citation": "Nielsen PJ, Hafdahl AR, Conn VS, LeMaster JW, Brown SA. Meta-analysis of the effect of exercise interventions on fitness outcomes among adults with type 1 and type 2 diabetes. Diabetes Res Clin Pract. 2006;74(2):111-20.",
+          "is_fitt_source": false
+        }
+      ]
+    },
+    {
+      "id": "cancer",
+      "label": "Cancro",
+      "epidemiology": "Cancer is a major public health concern that contributed to 10 million deaths and 23.6 million new cancer-related cases in 2019 (1). The occurrence of different cancer types is influenced by gender. Notably, breast cancer dominates as the primary cause of cancer-related death in women, while lung and prostate cancer prevail among men. Emerging evidence has established that exercise is a safe and effective intervention before, during, and after cancer treatment. Physical activity, and in particular targeted exercise, has been found to counteract the severity of adverse side effects, reduce the risk of developing new cancers, and limit comorbid conditions such as cardiovascular disease, diabetes, and osteoporosis (2). In the general population, there is a reduction of cancer mortality risk in comparison with inactivity of 12%, 14%, 14%, 15%, and 16% when carrying out 5, 10, 15, 20, and 25 MET hour per week, respectively, of recreational physical activity (6). For cancer survivors, in comparison with inactivity, 5, 10, 15, 30, and 50 MET hour per week reduced the overall cancer mortality by 18%, 25%, 27%, 30%, and 35%, respectively (6).",
+      "fitt": {
+        "aerobic": {
+          "frequency": "3-5 days/week.",
+          "intensity": "40-<60% VO₂R or HRR. Survivors may find RPE useful to gauge exercise intensity. Both MICT and HIIT can be used.",
+          "duration": "≥30 minutes/day. No lower limit of duration. During treatment, exercise volume and intensity may need to be modified due to chemotherapy or radiation-related toxicities.",
+          "type": "Walking, cycling, swimming. Swimming should not be prescribed for survivors with central lines, those with ostomies, those in an immunocompromised state, or those currently receiving radiation therapy."
+        },
+        "resistance": {
+          "frequency": "At least 2 sessions per week for each muscle group with a minimum of 48 hours between training the same muscle group.",
+          "intensity": "60-85% 1RM for 6-15 repetitions per set with 1-2 RIR. Increase weight when repetitions >15.",
+          "duration": "≥1 set, ≥6 repetitions per set; ≥60 seconds rest between sets.",
+          "type": "8-10 exercises of major muscle groups; machines or free weights."
+        },
+        "flexibility": {
+          "frequency": "2-3 days/week up to daily.",
+          "intensity": "Stretch within limits of pain to the point of tightness or slight discomfort.",
+          "duration": "Hold each stretch for 10-60 seconds.",
+          "type": "Static stretches (passive and/or active), for all major muscle tendon groups. Tai chi and yoga may be included."
+        }
+      },
+      "clinical_notes": [
+        "All cancer patients are recommended to avoid being sedentary and return to daily exercise as soon as possible following diagnosis.",
+        "Loss of skeletal muscle mass is common in cancer survivors due to the disease and treatments. It is recommended to assess body composition in all patients with cancer and if low muscle mass is detected then targeted resistance exercise should be prescribed with adjuvant nutritional support (i.e. protein supplementation). In severe cases of sarcopenia or cachexia, aerobic exercise is contraindicated and should be avoided or limited.",
+        "Lymphedema is not a contraindication for physical activity and no special precautions are required for participating in exercise or strength training of unaffected limbs. Supervised progressive resistance training starting with low volume and moderate intensity and increasing gradually according to signs and symptoms is safe and efficacious.",
+        "Cancer survivors are at a higher risk of skeletal fracture, spinal compression, and exacerbation of bone pain if they have bone metastases. High-impact loads, hyperflexion or hyperextension of the trunk, flexion or extension of the trunk with loads, or twisting motions should be avoided.",
+        "Individuals with peripheral neuropathy may have instability, balance difficulty, and altered gait biomechanics, increasing the risk of falls. Balance training should be incorporated into the exercise prescription. Modifications to the type of aerobic exercise, such as stationary cycling or water exercise versus walking, should be considered.",
+        "People with ostomy should avoid the Valsalva maneuver and focus on regulating abdominal pressure and ensuring a correct lifting technique.",
+        "Cancer survivors should not be restricted to low intensity, nor is high intensity contraindicated. The use of any intensity should be tailored to the individual situation of the patient.",
+        "For deconditioned patients such as those immediately post-surgery or with advanced-stage disease, the prescription may involve multiple short bouts of 5-10 minutes daily to accumulate at least 20 minutes on any given day.",
+        "An International Multidisciplinary Roundtable consensus statement recommends a treatment inclusion of moderate-intensity aerobic training at least three times per week, for at least 30 minutes over a period of at least 8-12 weeks. It is equally important to include at least two resistance training sessions per week using at least 60% of one repetition maximum for two or more sets of 8-15 repetitions for each major muscle group."
+      ],
+      "references": [
+        {
+          "id": "ref-1",
+          "citation": "Kocarnik JM, Compton K, Dean FE, Fu W, Gaw BL, Harvey JD, et al. Cancer Incidence, Mortality, Years of Life Lost, Years Lived With Disability, and Disability-Adjusted Life Years for 29 Cancer Groups From 2010 to 2019 A Systematic Analysis for the Global Burden of Disease Study 2019. JAMA Oncol. 2022;8(3):420-44.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-2",
+          "citation": "Cormie P, Zopf EM, Zhang X, Schmitz KH. The impact of exercise on cancer mortality, recurrence, and treatment-related adverse effects. Epidemiol Rev. 2017;39(1):71-92.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-3",
+          "citation": "Campbell KL, Winters-Stone KM, Wiskemann J, May AM, Schwartz AL, Courneya KS, et al. Exercise Guidelines for Cancer Survivors: Consensus Statement from International Multidisciplinary Roundtable. Med Sci Sport Exerc. 2019 Nov;51(11):2375-90.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-4",
+          "citation": "Cormie P, Atkinson M, Bucci L, Cust A, Eakin E, Hayes S, et al. Clinical oncology society of australia position statement on exercise in cancer care. Med J Aust. 2018;209(4):184-7.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-5",
+          "citation": "Hayes SC, Newton RU, Spence RR, Galvão DA. The Exercise and Sports Science Australia position statement: Exercise medicine in cancer management. J Sci Med Sport. 2019;22(11):1175-99.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-6",
+          "citation": "Li T, Wei S, Shi Y, Pang S, Qin Q, Yin J, et al. The dose-response effect of physical activity on cancer mortality: Findings from 71 prospective cohort studies. Br J Sports Med. 2016;50(6):339-45.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-7",
+          "citation": "American College of Sports Medicine. ACSM's Guidelines for Exercise Testing and Prescription. 8 ed. Baltimore: Williams & Wilkins.; 2022.",
+          "is_fitt_source": true
+        },
+        {
+          "id": "ref-8",
+          "citation": "Denlinger CS, Sanft T, Baker KS, Broderick G, Demark-Wahnefried W, Friedman DL, et al. Survivorship, Version 2.2018, NCCN Clinical Practice Guidelines in Oncology. J Natl Compr Cancer Netw. 2018 Oct 15;16(10):1216-47.",
+          "is_fitt_source": false
+        }
+      ]
+    },
+    {
+      "id": "osteoporosis",
+      "label": "Osteoporosi",
+      "epidemiology": "In 2019, the global prevalence of osteoporosis was around 18.3% of the total adult population (15-105 years) (1). This prevalence is higher in women (23.1%) than in men (11.7%) (1). Osteoporosis is defined by low bone mass and microarchitectural deterioration of bone tissue, leading to enhanced bone fragility and a consequent increase in fracture risk (2). BMD is a good surrogate measure of bone strength, accounting for 60%-85% of the variance in bone strength (3). BMD is considered normal if it is no lower than 1 standard deviation (SD) below the mean for young adults. Between 1.0 and 2.5 SD below the mean indicates osteopenia or low bone mass. A BMD of 2.5 SD or more below the mean in a young adult indicates osteoporosis (5). Fracture risk increases 1.5 to three-fold for each SD reduction in BMD (6). General levels of physical activity reduce the risk of hip fracture in a dose-response manner by 6% for every increase in 3 MET hour per week (equivalent to 1 hour per week of walking at an average pace). Active women with at least 24 MET hour per week have a 55% lower risk of hip fracture compared with women with very low levels of physical activity (7).",
+      "fitt": {
+        "aerobic": {
+          "frequency": "4-7 days/week.",
+          "intensity": "Low-risk individuals: high impact activities (>4 BW), as tolerable. Moderate-risk individuals: moderate-to-high impact activities (>2 BW), as tolerable. High-risk individuals: moderate impact activities (2-3 BW), within the limits of pain.",
+          "duration": "50 jumps per session (3-5 sets of 10-20 repetitions with 1-2 min rest between sets). High-risk individuals: aim to work up to 50 repetitions over time (5 sets of 10 repetitions with 1-2 min rest between sets).",
+          "type": "Vertical and multidirectional jumping and such like (e.g., bounding, etc.). Progress BW intensity by increasing jump heights or using weighted vests. Impact loading can be interspersed between balance and resistance training exercises. [Note: this component refers to impact loading, not traditional aerobic exercise, as per ESSA guidelines for osteoporosis.]"
+        },
+        "resistance": {
+          "frequency": "2 days/week.",
+          "intensity": "High to very high intensity (80-85% 1RM; ≥16 on Borg RPE 6-20).",
+          "duration": "2-3 sets of 8 repetitions.",
+          "type": "8 exercises per session using major muscle groups attached to the hip and spine including (on a rotating system): weighted lunges, hip abduction/adduction, knee extension/flexion, plantar-/dorsi-flexion, back extension, reverse chest flys, and abdominal exercises, or a smaller number of compound movements such as squats and deadlifts. Include supervised exercises watching proper technique and including muscle power and function exercises. Avoid deep forward spine flexion."
+        },
+        "flexibility": {
+          "frequency": "4 sessions/week (for moderate- and high-risk individuals).",
+          "intensity": "Moderate to high challenge to balance (such as reducing the base of support, moving the center of gravity, or reducing the need for upper limb support).",
+          "duration": "30 minutes of different balance exercises per session; at least 10 seconds per balance exercise and at least 10 steps forward and back for mobility exercises, increasing as tolerated to longer durations.",
+          "type": "Standing and moving exercises gradually reducing support to one-foot balance, incorporating leans and reaches to perturb center of mass, and regaining balance with walking variations, such as length of steps and walking on uneven surfaces, withdrawing vision, and performing dual tasks combined with balance activities. [Note: this component refers to balance training as per ESSA guidelines for osteoporosis.]"
+        }
+      },
+      "clinical_notes": [
+        "Exercise is greatly recommended to be accompanied by sufficient intake of calcium and vitamin D. Exercise prescription for osteoporotic patients should take special care in terms of choice of exercise due to the potential risks for the skeleton.",
+        "Loading must be dynamic rather than static, induce relatively high bone strains (deformations), and be applied rapidly. Among all the loading parameters, intensity is the most important parameter in exercise prescription as it is critical for bone strengthening.",
+        "Short bouts separated by periods of rest are more effective than the same number of loads performed consecutively, as bone cells will desensitize to repetitive loading.",
+        "Risk stratification: Low-risk individuals (normal BMD >-1.0 SD, no clinical risk factors): goal is to maximize bone mass and strength. Moderate-risk individuals (T-score -1.0 to -2.5 SD and/or clinical risk factors): goal is to preserve or improve bone mass and strength, and improve muscle strength, power, and balance. High-risk individuals (T-score less than -2.5 SD, previous fracture, and/or multiple risk factors): goal is to improve muscle strength in the back, legs, upper arms, and core, and enhance posture, balance, and coordination.",
+        "Low-risk individuals: incorporate balance activities where possible into strength and impact elements. Tasks with eyes closed should be done near secure railing or support.",
+        "Frail individuals need progressive resistance training to build sufficient strength for impact activities increasing gradually as tolerated. Frail individuals need supervised exercise near stable support and supervised balance training using secure support.",
+        "Physical activities that are osteogenic are recommended. Activities with limited loading forces to the skeleton could be insufficient in maintaining or increasing BMD, even if performed at levels high enough to produce improvements in aerobic fitness.",
+        "Because of the strong association between falls and osteoporotic fractures, any exercise program designed to prevent fractures in the elderly should include activities to improve muscle function, balance, and gait stability.",
+        "Dual-task activities, such as performing a physical activity while carrying out a secondary cognitive activity, may improve functional performance under both conditions.",
+        "The use of leg ergometers as an alternative to treadmills is indicated for individuals with severe vertebral osteoporosis for whom walking is painful or risky."
+      ],
+      "references": [
+        {
+          "id": "ref-1",
+          "citation": "Salari N, Ghasemi H, Mohammadi L, Behzadi M hasan, Rabieenia E, Shohaimi S, et al. The global prevalence of osteoporosis in the world: a comprehensive systematic review and meta-analysis. J Orthop Surg Res. 2021;16(1).",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-2",
+          "citation": "Jeon YK, Kim BH, Kim IJ. The diagnosis of osteoporosis. J Bone Min Res. 1994;9(8):1137-41.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-3",
+          "citation": "Kohrt WM, Bloomfield SA, Little KD, Nelson ME, Yingling VR. Physical activity and bone health. Med Sci Sports Exerc. 2004;36(11):1985-96.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-4",
+          "citation": "Vuori IM. Dose-response of physical activity and low back pain, osteoarthritis, and osteoporosis. Med Sci Sports Exerc. 2001 Jun;33(6 Suppl):S551-86; discussion 609-10.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-5",
+          "citation": "Kanis JA. International Assessment of Fracture Risk and its Application to Screening for Postmenopausal Osteoporosis: Synopsis of a WHO Report. 1994;368-81.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-6",
+          "citation": "Marshall D, Wedel H. Meta-analysis of how well measures of bone mineral density predict occurrence of osteoporotic fractures. 1996;312(May):1254-9.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-7",
+          "citation": "Feskanich D, Willett W, Colditz G. Walking and leisure-time activity and risk of hip fracture in postmenopausal women. JAMA. 2002;288(18):2300-6.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-8",
+          "citation": "Beck BR, Daly RM, Singh MAF, Taaffe DR. Exercise and Sports Science Australia (ESSA) position statement on exercise prescription for the prevention and management of osteoporosis. J Sci Med Sport. 2017;20(5):438-45.",
+          "is_fitt_source": true
+        },
+        {
+          "id": "ref-9",
+          "citation": "Hernandez CJ, Beaupré GS, Carter DR. A theoretical analysis of the relative influences of peak BMD, age-related bone loss and menopause on the development of osteoporosis. Osteoporosis Int. 2003;14(10):843-7.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-10",
+          "citation": "Kemmler W, Bebenek M, Kohl M, von Stengel S. Exercise and fractures in postmenopausal women. Final results of the controlled Erlangen Fitness and Osteoporosis Prevention Study (EFOPS). Osteoporosis Int. 2015;26(10):2491-9.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-11",
+          "citation": "Sherrington C, Tiedemann A, Fairhall N, Close JCT, Lord SR. Exercise to prevent falls in older adults: an updated meta-analysis and best practice recommendations. N S W Public Health Bull. 2011;22(4):78.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-12",
+          "citation": "Kemmler W, Shojaa M, Kohl M, Schoene D, Von Stengel S. Dynamic Resistance Exercise and Bone Mineral Density at the Lumbar Spine in Postmenopausal Women: A systematic review and meta-analysis with special emphasis to exercise parameters. Osteologie. 2020;29(3):194-206.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-13",
+          "citation": "Marques EA, Mota J, Carvalho J. Exercise effects on bone mineral density in older adults: A meta-analysis of randomized controlled trials. Age. 2012;34(6):1493-515.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-14",
+          "citation": "Ma D, Wu L, He Z. Effects of walking on the preservation of bone mineral density in perimenopausal and postmenopausal women: a systematic review and meta-analysis. Menopause. 2013 Nov;20(11):1216-26.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-15",
+          "citation": "American College of Sports Medicine. ACSM's Guidelines for Exercise Testing and Prescription. 8 ed. Baltimore: Williams & Wilkins.; 2009.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-16",
+          "citation": "Williams MA, Haskell WL, Ades PA, Amsterdam EA, Bittner V, Franklin BA, et al. Resistance exercise in individuals with and without cardiovascular disease: 2007 update: A scientific statement from the American Heart Association. Circulation. 2007;116(5):572-84.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-17",
+          "citation": "Weeks BK, Beck BR. The BPAQ: A bone-specific physical activity assessment instrument. Osteoporosis Int. 2008;19(11):1567-77.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-18",
+          "citation": "Pollock ML, Gaesser GA, Butcher JD, Després JP, Dishman RK, Franklin BA, et al. The recommended quantity and quality of exercise for developing and maintaining cardiorespiratory and muscular fitness, and flexibility in healthy adults. Med Sci Sports Exerc. 1998;30(6):975-91.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-19",
+          "citation": "Kerr D, Morton A, Dick I, Prince R. Exercise effects on bone mass in postmenopausal women are site-specific and load-dependent. J Bone Miner Res. 1996;11(2):218-25.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-20",
+          "citation": "Silsupadol P, Shumway-Cook A, Lugade V, van Donkelaar P, Chou L-S, Mayr U, et al. Effects of single-task versus dual-task training on balance performance in older adults: a double-blind, randomized controlled trial. Arch Phys Med Rehabil. 2009 Mar;90(3):381-7.",
+          "is_fitt_source": false
+        }
+      ]
+    },
+    {
+      "id": "depression",
+      "label": "Depressione",
+      "epidemiology": "Depression refers to a wide range of mental health problems characterized by the absence of a positive affect (a loss of interest and enjoyment in ordinary things and experiences), low mood, and a range of associated emotional, cognitive, physical, and behavioral symptoms (1). Globally, around 300 million people are estimated to suffer from depression, equivalent to 4.4% of the world's population. In adults, depression is more common among women (5.1%) than men (3.6%) (2). In comparison with adults who do not report any physical activity, accumulating half of the recommended weekly physical activity volume (4.4 MET hour per week) provides an 18% reduction in the risk of developing depression (7). Adults performing close to the physical activity recommendations (8.8 MET hour per week) have a 25% lower risk of developing depression. There is a broad quantity of evidence that suggests that physical activity and exercise may have similar effects in comparison with psychotherapy or pharmacotherapy (6).",
+      "fitt": {
+        "aerobic": {
+          "frequency": "2-3 sessions per week.",
+          "intensity": "50-85% of the maximum heart rate (HRmax).",
+          "duration": "20-30 minutes in non-clinical population; 45-60 minutes in clinical population.",
+          "type": "Prolonged, rhythmic activities using large muscle groups of the individual's choice."
+        },
+        "resistance": {
+          "frequency": "2 sessions per week.",
+          "intensity": "40%-79% of 1RM.",
+          "duration": "Around 45 minutes.",
+          "type": "Resistance machines, free weights, band or functional body weight of the individual's choice."
+        },
+        "flexibility": null
+      },
+      "clinical_notes": [
+        "Submaximal testing is recommended as depressed individuals have less energy and motivation for significant physical effort. They usually also display poorer physical health, lower levels of self-worth and self-esteem, and lower levels of physical fitness and physical activity than the general population.",
+        "Exercise testing can produce physiological responses similar to a panic attack. As depression is sometimes related to anxiety and panic attacks, individuals engaging in testing or a physical activity intervention should be informed that they will experience symptoms such as hyperventilation, tachycardia, or sweating as a normal response to exercise.",
+        "Around 2-3 sessions per week would be the most efficient approach for reducing symptoms, but some slightly additional benefits may occur if the frequency is increased up to 4-5 sessions per week.",
+        "4 weeks is enough for improvements in depressive symptoms, but around 10-12 weeks are required for the greatest antidepressant effects. Significant effects are observed when the total number of prescribed exercise sessions is around 13-24 sessions.",
+        "Aerobic exercise at any intensity level appears to be effective in reducing depressive symptoms. An exercise program ranging from 50-85% of the maximum heart rate (HRmax) is sufficient for efficiently reducing depressive symptoms.",
+        "Due to the lack of energy and interest, affective responses to exercise are very important, requiring the program to be based on the patient's current preferences and expectations. The focus should be on short-term benefits, and while exercising with a partner or a group is important for these individuals, between-patient comparisons should be avoided.",
+        "For resistance training, comparable benefits are observed between 2-4 sessions per week and with low-to-moderate and vigorous intensities. Lower frequencies and intensities are therefore recommended since they are more efficient.",
+        "Further beneficial effects are observed in depressive symptoms in individuals with clinical depression compared with non-clinical individuals for both aerobic and resistance training.",
+        "For individuals suffering from fatigue and low motivation, controlling the prescription through rate of perceived exertion is important in adapting the external load to the particular daily situation."
+      ],
+      "references": [
+        {
+          "id": "ref-1",
+          "citation": "NICE. Depression in adults: treatment and management. 2022.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-2",
+          "citation": "Depression and Other Common Mental Disorders: Global Health Estimates. Geneva: World Health Organization; 2017.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-3",
+          "citation": "Stubbs B, Vancampfort D, Hallgren M, Firth J, Veronese N, Solmi M, et al. EPA guidance on physical activity as a treatment for severe mental illness: a meta-review of the evidence and Position Statement from the European Psychiatric Association (EPA), supported by the International Organization of Physical Therapists in Mental. Eur Psychiatry. 2018;54:124-44.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-4",
+          "citation": "Malhi GS, Bell E, Bassett D, Boyce P, Bryant R, Hazell P, et al. The 2020 Royal Australian and New Zealand College of Psychiatrists clinical practice guidelines for mood disorders. Aust N Z J Psychiatry. 2021;55(1):7-117.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-5",
+          "citation": "Recchia F, Leung CK, Chin EC, Fong DY, Montero D, Cheng CP, et al. Comparative effectiveness of exercise, antidepressants, and their combination in treating non-severe depression: A systematic review and network meta-analysis of randomised controlled trials. Br J Sports Med. 2022;56(23):1375-80.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-6",
+          "citation": "Cooney GM, Dwan K, Greig CA, Lawlor DA, Rimer J, Waugh FR, et al. Exercise for depression. Cochrane Database Syst Rev. 2013 Sep 12;2013(9):2-2.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-7",
+          "citation": "Pearce M, Garcia L, Abbas A, Strain T, Schuch FB, Golubic R, et al. Association between Physical Activity and Risk of Depression: A Systematic Review and Meta-analysis. JAMA Psychiatry. 2022;79(6):550-9.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-8",
+          "citation": "Knapen J, Vancampfort D. Evidence for exercise therapy in the treatment of depression and anxiety. Int J Psychosoc Rehabil. 2014;17(2):75-87.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-9",
+          "citation": "American College of Sports Medicine. ACSM's Guidelines for Exercise Testing and Prescription. 8 ed. Baltimore: Williams & Wilkins.; 2022.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-10",
+          "citation": "Schuch FB, Vancampfort D, Richards J, Rosenbaum S, Ward PB, Stubbs B. Exercise as a treatment for depression: A meta-analysis adjusting for publication bias. J Psychiatr Res. 2016;77:42-51.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-11",
+          "citation": "Gordon BR, McDowell CP, Hallgren M, Meyer JD, Lyons M, Herring MP. Association of efficacy of resistance exercise training with depressive symptoms meta-analysis and meta-regression: Analysis of randomized clinical trials. JAMA Psychiatry. 2018;75(6):566-76.",
+          "is_fitt_source": true
+        },
+        {
+          "id": "ref-12",
+          "citation": "Rethorst CD, Trivedi MH. Evidence-based recommendations for the prescription of exercise for major depressive disorder. J Psychiatr Pract. 2013;19(3):204-12.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-13",
+          "citation": "Singh B, Olds T, Curtis R, Dumuid D, Virgara R, Watson A, et al. Effectiveness of physical activity interventions for improving depression, anxiety, and distress: An overview of systematic reviews. Br J Sports Med. 2023;1-10.",
+          "is_fitt_source": true
+        },
+        {
+          "id": "ref-14",
+          "citation": "Rethorst CD, Wipfli BM, Landers DM. The antidepressive effects of exercise: A meta-analysis of randomized trials. Sport Med. 2009;39(6):491-511.",
+          "is_fitt_source": false
+        },
+        {
+          "id": "ref-15",
+          "citation": "Knapen J, Vancampfort D, Moriën Y, Marchal Y. Exercise therapy improves both mental and physical health in patients with major depression. Disabil Rehabil. 2015;37(16):1490-5.",
+          "is_fitt_source": false
+        }
+      ]
+    }
+  ]
+}
